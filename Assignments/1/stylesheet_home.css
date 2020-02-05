@@ -1,0 +1,163 @@
+body {
+    background: rgb(180, 227, 233);
+    font-family: Georgia;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 25px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+/* layout */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    font-size: 19px;
+    color: black;
+    margin-bottom: 15px;
+    width: auto;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.middle {
+    width: 50%;
+}
+
+hr.new1 {
+    border-top: 3px solid red;
+}
+
+
+/* headers */
+
+h1 {
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h3 {
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+a:hover {
+    background-color: blue;
+    align-content: center;
+}
+
+
+/* social media section */
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+    text-align: auto;
+    text-decoration: none;
+}
+
+
+/* linkedin and github */
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    color: black;
+}
+
+
+/* table */
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: rgb(155, 201, 201);
+}
+
+table#t01 tr:nth-child(odd) {
+    background-color: rgb(109, 91, 175);
+}
+
+table#t01 th {
+    background-color: black;
+    color: rgb(141, 133, 133);
+}
+
+div.text {
+    height: 200px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+ul {
+    background: #85969c;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+a {
+    text-align: center;
+}
+
+
+/* tabs */
+
+
+/* Style the tab */

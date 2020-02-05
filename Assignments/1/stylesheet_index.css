@@ -1,0 +1,95 @@
+* {
+    /* Quick and Dirty Reset */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 255);
+    /* background color */
+    background-image: url("images/4214905-background-images-for-websites.jpg");
+    /* background image */
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 25px;
+    text-align: center;
+}
+
+ul {
+    background-color: rgb(0, 0, 255);
+    list-style: none;
+    /* contain the list items */
+    overflow: hidden;
+    /*margin: 0 auto;
+	display: table;*/
+    /* ul will behave like a table now */
+    text-align: center;
+}
+
+ul li {
+    /* float: left; */
+    display: inline-block;
+}
+
+ul li a {
+    padding: 5px 10px;
+    background: rgb(223, 218, 173);
+    color: black;
+    /*float: left;*/
+    /* some height would be nice */
+    line-height: 3em;
+    /* adjusting height */
+    display: block;
+    /* or inline-block */
+}
+
+ul li a:hover {
+    background: #e4e4e4;
+    color: #333;
+}
+
+
+/* layout */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+
+/* images */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+div.text {
+    height: 200px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
