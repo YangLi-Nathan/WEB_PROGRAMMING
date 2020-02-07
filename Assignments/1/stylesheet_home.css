@@ -61,6 +61,14 @@ h1 {
     text-align: center;
 }
 
+h5 {
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
 h2 {
     color: black;
     font-weight: bold;
@@ -85,7 +93,6 @@ a:hover {
     padding: 20px;
     font-size: 20px;
     width: 30px;
-    text-align: auto;
     text-decoration: none;
 }
 
@@ -99,6 +106,26 @@ a:hover {
 
 .fa-github {
     color: black;
+    font-size: 48px;
+    background-color: white;
+}
+
+.fa-youtube {
+    color: red;
+    font-size: 48px;
+    background-color: white;
+}
+
+.fa-amazon {
+    color: black;
+    font-size: 48px;
+    background-color: white;
+}
+
+.fa-apple {
+    color: white;
+    font-size: 48px;
+    background-color: black;
 }
 
 
@@ -144,7 +171,7 @@ div.text {
     margin-left: -200px;
 }
 
-ul {
+ul.bio {
     background: #85969c;
     list-style: none;
     overflow: hidden;
@@ -156,8 +183,13 @@ a {
     text-align: center;
 }
 
+mark.red {
+    color: #ff0000;
+    background: none;
+    font-weight: bold;
+    text-align: center;
+}
 
-/* tabs */
-
-
-/* Style the tab */
+.red {
+    color: red;
+}
