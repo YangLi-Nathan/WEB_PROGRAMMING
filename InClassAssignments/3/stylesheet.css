@@ -1,0 +1,34 @@
+header {
+    text-align: center;
+}
+
+.main {
+    content: "";
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    float: left;
+    width: auto;
+}
+
+.left {
+    flex-basis: 33%;
+    border: red;
+    border-style: dashed;
+    padding: 2em;
+}
+
+.right {
+    flex-basis: 67%;
+    border: red;
+    border-style: dashed;
+    padding: 2em;
+}
+
+img {
+    float: right;
+    width: 200px;
+}
