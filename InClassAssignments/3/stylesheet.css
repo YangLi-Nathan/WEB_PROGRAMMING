@@ -2,33 +2,49 @@ header {
     text-align: center;
 }
 
-.main {
+main {
     content: "";
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
 }
 
 .column {
     float: left;
-    width: auto;
 }
 
 .left {
+    border: 4px dashed red;
+    margin: 2em;
     flex-basis: 33%;
-    border: red;
-    border-style: dashed;
     padding: 2em;
 }
 
 .right {
+    border: 4px dashed red;
+    margin: 2em;
     flex-basis: 67%;
-    border: red;
-    border-style: dashed;
     padding: 2em;
 }
 
 img {
-    float: right;
     width: 200px;
+    float: right;
+}
+
+#para1 {
+    clear: both;
+}
+
+p {
+    padding: 5px;
+}
+
+#bottom {
+    position: fixed;
+    bottom: 5px;
 }
