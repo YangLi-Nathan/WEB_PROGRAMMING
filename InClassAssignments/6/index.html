@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>In Class Activity 6</title>
+</head>
+
+<body>
+
+    <form action="action_page.php" method="post">
+        <!-- font section          $_POST["font"]  -->
+        <p>
+            Note: fantasy and cursive look similar to italic style, please then you select these two please use bold, and use Arial font to test italic and oblique sytle.
+        </p>
+        <label for="font">Font: </label>
+        <select id="font" , name="font">
+        <option value="A">Arial</option>
+        <option value="f">Fantasy</option>
+        <option value="c">Cursive</option>
+        </select>
+
+        <!-- font section          $_POST["style"]  -->
+
+        <input name="color" type="color" />
+
+        <br>
+        <!-- style section          $_POST["style"] -->
+        <label for="style">Style: </label>
+        <select id="style" , name="style">
+        <option value="bold">Bold</option>
+        <option value="italic">Italic</option>
+        <option value="oblique">Oblique</option>
+
+
+    </select>
+        <br>
+        <!-- large text box section $_POST["text_box"]  -->
+
+        <label for="text_box">Text Box:</label>
+        <br>
+        <textarea id="large_text_box" rows="4" cols="50" , name="text_box">
+        </textarea>
+        <br>
+        <input type="Submit">
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
