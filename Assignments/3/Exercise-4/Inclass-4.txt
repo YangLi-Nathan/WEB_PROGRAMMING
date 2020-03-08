@@ -1,0 +1,7 @@
+codd server links
+Part-1:
+http://codd.cs.gsu.edu/~schinnapullaiah1/Exercise4/Validate.php
+Part-2:
+http://codd.cs.gsu.edu/~schinnapullaiah1/Exercise4/Order01.php
+Part-3:
+https://codd.cs.gsu.edu/~schinnapullaiah1/Exercise4/login.php
