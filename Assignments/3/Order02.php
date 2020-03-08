@@ -7,22 +7,7 @@
 
 <body>
     <div class="pageContainer centerText">
-        <?php
 
-      /*$referrer = $_SERVER['HTTP_REFERER']; 
-          if (stripos($referrer, 'Order02.php') == false) 
-          header("location:order01.php");*/
-
-      $fname = $_POST['fname'];
-      $model = $_POST['model'];
-      if ((strlen($fname) < 2 || strlen($fname) > 20)) {
-
-         echo "<p>First Name String length should be 2 to 20 chars.</p>";
-      } else {
-         setcookie("fname", $fname, time() + 31536000);
-         setcookie("model", $model, time() + 31536000);
-
-      ?>
 
 
 
@@ -31,7 +16,7 @@
 
 
         <div class="pageContainer">
-            <form action="Order03.php" method="post" class="formLayout">
+            <form action="Order03.php" class="formLayout">
                 <div class="formGroup">
                     <label>Car color:</label>
                     <div class="formElements">
@@ -54,9 +39,6 @@
                 </div>
             </form>
         </div>
-        <?php
-      }
-      ?>
     </div>
 </body>
 

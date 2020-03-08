@@ -10,7 +10,7 @@
 
         <h2 class="centerText">Select Model</h2>
 
-        <form action="Order02.php" method="post" class="formLayout">
+        <form action="Order02.php" class="formLayout">
             <div class="formGroup">
                 <label>First name:</label>
                 <input type="text" name="fname" class="textbox" autofocus required placeholder="First name"
