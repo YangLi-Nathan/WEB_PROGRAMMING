@@ -4,6 +4,8 @@
 <head>
     <title>Validation Confirm</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+
 
 </head>
 
@@ -49,19 +51,21 @@
         exit();
     }
 
+
+    echo '<img src="images/checkbox.jpg" style="width:400px;height:auto;" alt="icon" />';
+
     echo "
-    <div class='center'>
+    <div class='pageContainer centerText'>
     <h3>All inputs have valid formats!</h3>
     Email: $email <br>
     First name: $fname <br>
     Age:$age<br>
     State: $state <br>
     Zip:$zip<br>
+    </div>
     ";
 
     ?>
-
-
 
 
 </body>

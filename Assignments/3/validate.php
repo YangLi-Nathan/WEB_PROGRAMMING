@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+
     <title>HW3</title>
     <h1>Form Validation</h1>
     <p>HTML5 and Server-Side Validation</p>

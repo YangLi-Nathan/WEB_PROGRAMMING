@@ -7,16 +7,19 @@
 
 <body>
     <div class="pageContainer centerText">
-
-
-
-
+        <?php
+        $fname = $_POST['fname'];
+        $model = $_POST['model'];
+        if ((strlen($fname) < 2 || strlen($fname) > 20)) {
+            echo "<p>First Name's length should be 2 to 20 characters.</p>";
+        } else {
+            setcookie("fname", $fname, time() + 31536000);
+            setcookie("model", $model, time() + 31536000);
+        ?>
         <p></p>
         <h2 class="centerText">Select Color</h2>
-
-
         <div class="pageContainer">
-            <form action="Order03.php" class="formLayout">
+            <form action="Order03.php" method="post" class="formLayout">
                 <div class="formGroup">
                     <label>Car color:</label>
                     <div class="formElements">
@@ -39,6 +42,9 @@
                 </div>
             </form>
         </div>
+        <?php
+        }
+        ?>
     </div>
 </body>
 
