@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>In Class Activity 7</title>
+</head>
+
+<body>
+    <script>
+        // Q1 Fibonacci Sequence
+        function fibonacci(n) {
+            let re = [0, 1];
+            for (let i = 2; i <= n; i++) {
+                re.push(re[i - 1] + re[i - 2]);
+            }
+            return re;
+        }
+        document.write("Q1: <br> The first 8th Fibonacci numbers: " + fibonacci(8));
+        document.write("<br>");
+
+        // Q2 stars
+
+        function star(n) {
+            document.write("Q2: <br>");
+            for (let i = 1; i <= n; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        }
+        star(5);
+
+        // Q3
+        function sortArray() {
+            document.write("Q3: <br>");
+            var arr1 = [3, 8, 7, 6, 5, -4, 3, 2, 1];
+            document.write("Simple array" + arr1);
+            document.write("<br>");
+            document.write("Sorted Array: " + arr1.sort());
+            document.write("<br>");
+        }
+        sortArray();
+
+        // Q4
+
+        var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+        document.write("Simple array" + arr1);
+
+        function countSeq(arr1) {
+            var count = 1;
+            var popular = arr1[0];
+            var temp = 0;
+            var tempCount;
+
+            for (let i = 0; i < arr1.length - 1; i++) {
+
+                temp = arr1[i];
+                var tempCount = 0;
+
+                for (let j = 1; j < arr1.length; j++) {
+                    if (temp == arr1[j]) {
+                        tempCount++;
+                    }
+                    if (tempCount > count) {
+                        popular = temp;
+                        count = tempCount;
+                    }
+                }
+            }
+            document.write("The most frequent item: " + popular + " (" + count + " times)");
+        }
+
+        document.write("* <br>");
+        countSeq(arr1);
+    </script>
+
+</body>
+
+</html>
