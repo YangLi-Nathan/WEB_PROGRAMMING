@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>In Class Activity 7</title>
 </head>
 
@@ -15,7 +15,9 @@
             }
             return re;
         }
-        document.write("Q1: <br> The first 8th Fibonacci numbers: " + fibonacci(8));
+        document.write(
+            "Q1: <br> The first 8th Fibonacci numbers: " + fibonacci(8)
+        );
         document.write("<br>");
 
         // Q2 stars
@@ -43,8 +45,9 @@
         sortArray();
 
         // Q4
+        document.write("Q4: <br>");
 
-        var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+        var arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
         document.write("Simple array" + arr1);
 
         function countSeq(arr1) {
@@ -54,7 +57,6 @@
             var tempCount;
 
             for (let i = 0; i < arr1.length - 1; i++) {
-
                 temp = arr1[i];
                 var tempCount = 0;
 
@@ -68,13 +70,32 @@
                     }
                 }
             }
-            document.write("The most frequent item: " + popular + " (" + count + " times)");
+            document.write(
+                "The most frequent item: " + popular + " (" + count + " times)"
+            );
+        }
+        document.write("<br>");
+        countSeq(arr1);
+
+        // Q5
+        document.write("<br>");
+        document.write("Q5: <br>");
+
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * i);
+                const temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+            return array;
         }
 
-        document.write("* <br>");
-        countSeq(arr1);
+        var arr_q5 = [1, 2, 3, 4, 5, 6];
+        document.write("The sample array: " + arr_q5);
+        document.write(" <br>");
+        document.write("shuffled array: " + shuffle(arr_q5));
     </script>
-
 </body>
 
 </html>

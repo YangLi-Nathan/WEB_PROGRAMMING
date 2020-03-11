@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Q6- form validation</title>
+    <script src="script.js"></script>
+
+    <style>
+        #error_id,
+        #error_fname,
+        #error_lname {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+    <h1>Q6- form validation</h1>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>ID :</td>
+            <td><input type="text" id="id" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p id="error_id"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>First Name :</td>
+            <td><input type="text" id="fname" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p id="error_fname"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Last Name :</td>
+            <td><input type="text" id="lname" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p id="error_lname"></p>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td></td>
+            <td><button id="addBtn" onclick="form_validation();">ADD</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p id="msg"></p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
