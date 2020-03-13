@@ -19,17 +19,7 @@ if (isset($_POST['abandon'])) {
 </head>
 
 <body>
-    <?php
-    if (!isset($_SESSION['username'])) {
-        header("location: login.php");
-        exit;
-    }
-    if (isset($_POST['abandon'])) {
-        session_unset();
-        header("location: login.php");
-        exit;
-    }
-    ?>
+
     <div class="pageContainer centerText">
         <h2>Protected.php Page</h2>
         <hr>
