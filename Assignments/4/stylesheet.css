@@ -1,0 +1,15 @@
+table,
+th,
+td {
+    border: 2px solid black;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+}
+
+#report {
+    align-items: center;
+    margin: auto;
+}
