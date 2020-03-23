@@ -63,3 +63,18 @@ button {
     display: inline-block;
     width: 22%;
 }
+
+h1 {
+    border: solid rgb(122, 17, 44);
+}
+
+#sound_effect_message {
+    font-size: 13px;
+    font-style: oblique;
+    color: rgb(95, 60, 160);
+    font-weight: bold;
+}
+
+.stopwatch {
+    border: solid rgb(172, 214, 153);
+}

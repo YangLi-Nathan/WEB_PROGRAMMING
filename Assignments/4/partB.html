@@ -12,23 +12,37 @@
     <div>
         <img src="images/guess.gif"></img>
     </div>
+    <!-- audio sound effects -->
 
-
-    <!-- clock and max limit -->
     <div>
+
+        <audio id="clockAudio" src="soundEffects/clock_ticking_sound_effect.mp3" loop="loop">
+        clock sound may not working in google chrome due to the autoplay policy changes. 
+        however, you can enable the autoplay via google chrome setting.
+        you can read more about it from google chrome's official website.
+        </audio>
+        <audio id="winAudio" src="soundEffects/Winning-sound-effect.mp3">
+
+            please see details from above statement
+        </audio>
 
 
     </div>
 
+    <!--
+        test button 
+    <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+            -->
 
-    <!-- text box -->
-
+    <!-- timer -->
+    <p> Timer: </p>
+    <div class="stopwatch" id="a-timer"></div><br>
 
     <br>
     <p class="message"></p>
     <p class="chance"></p>
     <br>
-
 
     <div id="game_layout">
         <input type="number" id="user_input" placeholder="Enter Your Guess Here">
@@ -36,14 +50,17 @@
         <br>
         <input type="submit" id="user_submit" value="Guess">
     </div>
-
-
-
-
+    <br>
+    <br>
+    <p id="sound_effect_message">
+        Note:
+        <br> There should be a clock ticking sound effect and a winning sound effect after you win, if you did not hear it.
+        <br> It's becuase the google chrome autoplay policy, you can enable autoplay from google chrome setting or you can try to use another web browser.
+        <br>You can also check the winning number by inspect the console tab, it will showup in the console after you completed your first guess.
+        <br>
+    </p>
 
     <script src="action/partB.js" charset="utf-8"></script>
-
-
 
 </body>
 
