@@ -17,3 +17,8 @@ body {
 #links {
     font-size: 40px;
 }
+
+p {
+    font-size: x-large;
+    text-align: center;
+}

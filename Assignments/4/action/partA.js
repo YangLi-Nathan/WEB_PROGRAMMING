@@ -9,7 +9,7 @@ function myFunction() {
     var new_entry = true;
 
     while (new_entry) {
-        user_input = prompt(" Enters the (integer) number of hours worked in the week for each employee: ");
+        user_input = prompt(" Enters the number of hours worked for employees (enter -1 to print payroll): ");
         if (user_input == -1) {
             new_entry = false;
         } else {
