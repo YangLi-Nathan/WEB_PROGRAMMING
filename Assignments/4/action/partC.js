@@ -100,9 +100,7 @@ let previousTarget = null
 var picNum
 let delay = 1200
 let winCount = 0;
-let cardDelay8 = 3000;
-let cardDelay10 = 5000;
-let cardDelay12 = 8000;
+var cardDelay = 0;
 
 
 var game = document.getElementById('game')
@@ -148,8 +146,28 @@ $("#dialog").dialog({
     },
     width: "400px"
 });
+
+
 // create table
 function createTable(cardsArray) {
+
+
+
+    var numPic = getPicNum()
+
+
+    if (numPic == 8) {
+        cardDelay = 3000;
+    } else if (numPic == 10) {
+        cardDelay = 5000;
+
+    } else {
+        cardDelay = 8000;
+
+    }
+
+
+
     // duplicate cards and randomlize it
     let gameGrid = cardsArray.concat(cardsArray)
     gameGrid.sort(() => 0.5 - Math.random())
@@ -162,20 +180,43 @@ function createTable(cardsArray) {
         card.dataset.name = item.name
 
         const front = document.createElement('div')
+
         front.classList.add('front')
 
-        // Create back of card, which contains
         const back = document.createElement('div')
         back.classList.add('back')
+
+        card.style.display = "none"
+
         back.style.backgroundImage = `url(${item.img})`
-            // Append card to grid, and front and back to each card
         grid.appendChild(card)
-
-        //setTimeout(card.appendChild(front), 30000)
-        //setTimeout(card.appendChild(back), 30000)
-
         card.appendChild(front)
         card.appendChild(back)
+
+
+
+        const cardT = document.createElement('div')
+
+        // Apply a card class to that div
+        cardT.classList.add('card')
+
+        cardT.dataset.name = item.name
+
+        cardT.style.backgroundImage = `url(${item.img})`
+
+        grid.appendChild(cardT)
+
+
+        setTimeout(() => {
+            cardT.style.display = "none"
+
+        }, cardDelay);
+
+        setTimeout(() => {
+            card.style.display = "block"
+        }, cardDelay);
+
+
 
     })
 }
