@@ -78,3 +78,7 @@ h1 {
 .stopwatch {
     border: solid rgb(172, 214, 153);
 }
+
+#links {
+    font-size: 40px;
+}
