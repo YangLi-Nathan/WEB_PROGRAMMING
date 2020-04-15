@@ -17,7 +17,9 @@
     </div>
 
     <br>
+    <br>
     <hr>
+
     <?php
 	$user = "yli48";
 	$password = "yli48";
