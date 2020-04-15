@@ -16,7 +16,6 @@
         <a href="https://codd.cs.gsu.edu/~yli48/Assignments/5/modify.html">Current Inventory Modification</a>
     </div>
     <br>
-    <br>
     <hr>
     <?php
 	$user = "yli48";
