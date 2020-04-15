@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-    <title>New Stock</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/display.css">
+    <title>Modify Current Inventory</title>
 
 </head>
 
 <body>
-
 
     <!-- Navigation Bar -->
     <div class="topnav">
@@ -20,23 +18,19 @@
         <a href="https://codd.cs.gsu.edu/~yli48/Assignments/5/modify.html">Current Inventory Modification</a>
     </div>
 
-    <!-- Form -->
 
-    <form action="update.php" method="POST">
-        Purchase No: <input type="text" name="purchseNO" required pattern="P\d{3}" placeholder="format:P###">
+
+    <form action="modify.php" method="POST">
         <br> Supplier ID:<input type="text" name="supplierID" required pattern="S\d{3}" placeholder="format:S###">
-        <br> Date: <input type="date" name="date" required>
+        <br>
         <br> Quantity: <input type="number" name="quantity" required>
-        <br> Description:
-        <input type="text" name="description" required maxlength="49">
-        <br> Unit Price:<input type="number" required name="price" min="0" value="0" step=".01">
         <br>
         <input type="submit">
     </form>
-
+    <br>
+    <hr>
 
 
 </body>
-
 
 </html>

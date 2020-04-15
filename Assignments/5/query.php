@@ -12,6 +12,8 @@
         <a href="https://codd.cs.gsu.edu/~yli48/Assignments/5/display.php">Display</a>
         <a href="https://codd.cs.gsu.edu/~yli48/Assignments/5/newpurchase.html">New Purchases</a>
         <a href="https://codd.cs.gsu.edu/~yli48/Assignments/5/query.html">Search</a>
+        <a href="https://codd.cs.gsu.edu/~yli48/Assignments/5/delete.html">Delete a Purchase</a>
+        <a href="https://codd.cs.gsu.edu/~yli48/Assignments/5/modify.html">Current Inventory Modification</a>
     </div>
 
     <br>

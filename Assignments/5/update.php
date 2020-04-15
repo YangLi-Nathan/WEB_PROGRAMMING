@@ -17,9 +17,7 @@
     $sql ="INSERT INTO `Purchases`(`purchase no`,`supplierID`,`Date`,`Quantity`,`Description`,`Price`) values ('$purchseNO','$supplierID','$date','$quantity','$description','$price')";
 
     if ($conn->query($sql) == TRUE) {
-        echo '<script>alert("New record created successfully!")
-        location="display.php";
-        </script>';
+        header('Location: display.php');
     } else {
         echo '<script>alert("New record was NOT created! There was something wrong! Please try again.")
         location="newpurchase.html";
