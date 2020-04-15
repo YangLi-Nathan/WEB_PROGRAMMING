@@ -19,7 +19,7 @@
     if ($conn->query($sql) == TRUE) {
         header('Location: display.php');
     } else {
-        echo '<script>alert("New record was NOT created! There was something wrong! Please try again.")
+        echo '<script>alert("New record was NOT created! Duplicate Purchase ID or there was something wrong! Please try again.")
         location="newpurchase.html";
         </script>';
     }

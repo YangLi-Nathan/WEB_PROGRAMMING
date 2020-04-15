@@ -2,6 +2,8 @@
 
 <head>
     <link rel="stylesheet" href="style/display.css">
+    <title>Display Current Inventory</title>
+
 </head>
 
 <body>
