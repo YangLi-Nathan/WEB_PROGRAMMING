@@ -26,11 +26,11 @@
     <form action="update.php" method="POST">
         Purchase No: <input type="text" name="purchseNO" required pattern="P\d{3}" placeholder="format:P###">
         <br> Supplier ID:<input type="text" name="supplierID" required pattern="S\d{3}" placeholder="format:S###">
-        <br> Date: <input type="date" name="date" required>
+        <br> Date: <input type="date" name="date" required pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="format:mm/dd/yyyy">
         <br> Quantity: <input type="number" name="quantity" required>
         <br> Description:
         <input type="text" name="description" required maxlength="49">
-        <br> Unit Price:<input type="number" required name="price" min="0" value="0" step=".01">
+        <br> Unit Price:<input type="number" required name="price" min="0" value="0" step=".01" pattern='[0-9]+(\\.[0-9][0-9]?)?'>
         <br>
         <input type="submit">
     </form>
