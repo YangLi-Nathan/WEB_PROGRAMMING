@@ -26,8 +26,8 @@
     <form action="update.php" method="POST">
         Purchase No: <input type="text" name="purchseNO" required pattern="P\d{3}" placeholder="format:P###">
         <br> Supplier ID:<input type="text" name="supplierID" required pattern="S\d{3}" placeholder="format:S###">
-        <br> Date: <input type="date" name="date" required pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="format:mm/dd/yyyy">
-        <br> Quantity: <input type="number" name="quantity" required>
+        <br> Date: <input type="date" name="date" required pattern="(?:19|20)[0-9]{2}/(?:(?:0[1-9]|1[0-2])/(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])/(?:30))|(?:(?:0[13578]|1[02])-31))" placeholder="format:yyyy/mm/dd">
+        <br> Quantity: <input type="number" name="quantity" required pattern="\d*" maxlength="5" min="1" max="99999">
         <br> Description:
         <input type="text" name="description" required maxlength="49">
         <br> Unit Price:<input type="number" required name="price" min="0" value="0" step=".01" pattern='[0-9]+(\\.[0-9][0-9]?)?'>
